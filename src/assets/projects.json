@@ -1,0 +1,488 @@
+[
+    {
+        "title": "Interferències",
+        "year": "2024",
+        "client": "Self-comissioned",
+        "type": "on_going",
+        "location": "Olot",
+        "authors": ["Daniel Verano & Pol Valverde i Valverde"],
+        "showcases": ["Festival Lluèrnia 2024 (Olot)"],
+        "nextShowcases": null,
+        "technologies": ["Electronics", "Max/MSP", "Analogic Sound Design"],
+        "description":[
+            "Interferències is an immersive installation that transforms the invisible electromagnetic waves around us into a perceptible sound and light landscape. The beacons capture signals from sources like antennas, radios, or mobile devices, converting them into sound and light in real-time. Each visit is unique due to the constant interaction with the environment and visitors' devices, which can alter the landscape by generating interferences. This piece invites exploration of the invisible electromagnetic dimensions that underpin our world.",
+            "The signal-capturing device is based on the open-source project <em>Priezor</em>, created by LOM / Jonás Gruska, and licensed under CC BY-NC-SA. More information at <a href=https://store.lom.audio/products/priezor target=_blank style=text-decoration:underline>LOM Audio</a>.",
+            "Run time: Continuous",
+            "In collaboration with: Lluèrnia, Festival de Llum i Foc",
+            "Commissioned by: Self-commissioned &amp; Lluèrnia",
+            "Images by: Daniel Verano",
+            "Acknowledgments: Jonás Gruska (<em>Priezor</em>)"
+        ], 
+        "images": [
+            {
+            "url": "/images/interferencies/Interferencies_00065.jpg",
+            "alt": "Description of picture 1"
+            },
+            {
+            "url": "/images/interferencies/Interferencies_00111-3.jpg",
+            "alt": "Description of picture 2"
+            },
+            {
+            "url": "/images/interferencies/Interferencies_00284.jpg",
+            "alt": "Description of picture 3"
+            },
+            {
+            "url": "/images/interferencies/Interferencies_00296-2.jpg",
+            "alt": "Description of picture 4"
+            },
+            {
+            "url": "/images/interferencies/Interferencies_00405-2.jpg",
+            "alt": "Description of picture 5"
+            }
+        ],
+        "video": {
+            "url": "https://www.youtube.com/embed/gB7gdq1NxO8",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "/images/interferencies/interferencies_cover.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed/Ongoing",
+        "routeName": "interferencies"
+    },
+    {
+        "title": "Project 1",
+        "year": "2023",
+        "client": "Client 1",
+        "type": "featured",
+        "location": "Location 1",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 1."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image1.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image2.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover1.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_1"
+    },
+    {
+        "title": "Project 2",
+        "year": "2022",
+        "client": "Client 2",
+        "type": "featured",
+        "location": "Location 2",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 2."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image3.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image4.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover2.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_2"
+    },
+    {
+        "title": "Project 3",
+        "year": "2021",
+        "client": "Client 3",
+        "type": "featured",
+        "location": "Location 3",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 3."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image5.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image6.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover3.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_3"
+    },
+    {
+        "title": "Project 4",
+        "year": "2020",
+        "client": "Client 4",
+        "type": "featured",
+        "location": "Location 4",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 4."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image7.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image8.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover4.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_4"
+    },
+    {
+        "title": "Project 5",
+        "year": "2019",
+        "client": "Client 5",
+        "type": "featured",
+        "location": "Location 5",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 5."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image9.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image10.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover5.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_5"
+    },
+    {
+        "title": "Project 6",
+        "year": "2018",
+        "client": "Client 6",
+        "type": "featured",
+        "location": "Location 6",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 6."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image11.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image12.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover6.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_6"
+    },
+    {
+        "title": "Project 7",
+        "year": "2017",
+        "client": "Client 7",
+        "type": "featured",
+        "location": "Location 7",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 7."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image13.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image14.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover7.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_7"
+    },
+    {
+        "title": "Project 8",
+        "year": "2016",
+        "client": "Client 8",
+        "type": "featured",
+        "location": "Location 8",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 8."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image15.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image16.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover8.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_8"
+    },
+    {
+        "title": "Project 9",
+        "year": "2015",
+        "client": "Client 9",
+        "type": "featured",
+        "location": "Location 9",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 9."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image17.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image18.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover9.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_9"
+    },
+    {
+        "title": "Project 10",
+        "year": "2014",
+        "client": "Client 10",
+        "type": "featured",
+        "location": "Location 10",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 10."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image19.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image20.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover10.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_10"
+    },
+    {
+        "title": "Project 9",
+        "year": "2015",
+        "client": "Client 9",
+        "type": "featured",
+        "location": "Location 9",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 9."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image17.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image18.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover9.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_9"
+    },
+    {
+        "title": "Project 10",
+        "year": "2014",
+        "client": "Client 10",
+        "type": "featured",
+        "location": "Location 10",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 10."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image19.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image20.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover10.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_10"
+    },
+    {
+        "title": "Project 9",
+        "year": "2015",
+        "client": "Client 9",
+        "type": "featured",
+        "location": "Location 9",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 9."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image17.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image18.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover9.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_9"
+    },
+    {
+        "title": "Project 10",
+        "year": "2014",
+        "client": "Client 10",
+        "type": "featured",
+        "location": "Location 10",
+        "technologies": ["Tech1", "Tech2", "Tech3"],
+        "description": [
+            "Description of Project 10."
+        ],
+        "images": [
+            {
+                "url": "images/altres/image19.jpg",
+                "alt": "Description of picture 1"
+            },
+            {
+                "url": "images/altres/image20.jpg",
+                "alt": "Description of picture 2"
+            }
+        ],
+        "video": {
+            "url": "https://example.com/video.mp4",
+            "alt": "Description of the video"
+        },
+        "coverImage": {
+            "url": "images/altres/cover10.jpg",
+            "alt": "Description of the cover image"
+        },
+        "status": "Completed",
+        "routeName": "project_10"
+    }
+]

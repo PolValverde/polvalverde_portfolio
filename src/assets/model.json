@@ -1,48 +1,85 @@
 {
-  ":name": "Portfolio Projects Model",
-  ":description": "Model for portfolio projects structure",
+  ":name": "Portfolio Projects",
+  ":description": "Collection of portfolio projects and their details",
   "projects": {
+    ":description": "List of all portfolio projects",
     ":items": {
-      "title": { ":type": "line" },
-      "year": { ":type": "line" },
-      "client": { ":type": "line" },
-      "type": { ":type": "line" },
-      "location": { ":type": "line" },
-      "authors": {
-        ":items": { ":type": "text" }
+      "title": {
+        ":type": "line",
+        ":description": "Project title"
       },
-      "showcases": {
-        ":items": { ":type": "text" }
+      "year": {
+        ":type": "line",
+        ":description": "Year of completion"
       },
-      "nextShowcases": {
-        ":items": { ":type": "text" }
+      "client": {
+        ":type": "line",
+        ":description": "Client name"
       },
-      "technologies": {
-        ":items": { ":type": "text" }
+      "type": {
+        ":type": "line",
+        ":description": "Project type/category"
       },
       "description": {
-        "mainText": { ":type": "text" },
-        "technicalDetails": { ":type": "text" },
-        "credits": {
-          ":items": { ":type": "text" }
+        ":description": "Project description details",
+        "mainText": {
+          ":type": "text",
+          ":richtext": true
+        },
+        "technicalDetails": {
+          ":type": "text",
+          ":richtext": true
         }
       },
-      "images": {
+      "credits": {
+        ":description": "Project credits and acknowledgments",
         ":items": {
-          "image": { ":type": "image" },
-          "alt": { ":type": "line" }
+          ":type": "line"
         }
       },
-      "video": {
-        "url": { ":type": "line" },
-        "alt": { ":type": "line" }
+      "technologies": {
+        ":description": "Technologies used in the project",
+        ":items": {
+          ":type": "line"
+        }
       },
-      "coverImage": {
-        "image": { ":type": "image" },
-        "alt": { ":type": "line" }
+      "media": {
+        ":description": "Project media assets",
+        "images": {
+          ":items": {
+            "image": {
+              ":type": "image"
+            },
+            "alt": {
+              ":type": "line"
+            }
+          }
+        },
+        "coverImage": {
+          "image": {
+            ":type": "image"
+          },
+          "alt": {
+            ":type": "line"
+          }
+        },
+        "video": {
+          "url": {
+            ":type": "line"
+          },
+          "alt": {
+            ":type": "line"
+          }
+        }
       },
-      "status": { ":type": "line" },
-      "routeName": { ":type": "line" }
+      "status": {
+        ":type": "line",
+        ":description": "Project status"
+      },
+      "routeName": {
+        ":type": "line",
+        ":description": "URL route name"
+      }
     }
   }
 }

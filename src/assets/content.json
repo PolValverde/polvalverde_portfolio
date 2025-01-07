@@ -1,31 +1,37 @@
 {
   "projects": [
     {
-        "title": "Interferències",
-        "year": 2024,
-        "client": "Self-comissioned",
-        "type": "on_going",
-        "location": "Olot",
-        "authors": ["Daniel Verano & Pol Valverde i Valverde"],
-        "showcases": ["Festival Lluèrnia 2024 (Olot)"],
-        "nextShowcases": [],
-        "technologies": ["Electronics", "Max/MSP", "Analogic Sound Design"],
-        "description": {
-          "mainText": "",
-          "technicalDetails": "",
-          "credits": []
-        },
+      "title": "Interferències",
+      "year": "2024",
+      "client": "Self-comissioned",
+      "type": "on_going",
+      "location": "Olot",
+      "technologies": [
+        "Electronics",
+        "Max/MSP",
+        "Analogic Sound Design"
+      ],
+      "description": {
+        "mainText": "Project description goes here",
+        "technicalDetails": "Technical details go here"
+      },
+      "credits": [
+        "Daniel Verano",
+        "Pol Valverde i Valverde"
+      ],
+      "media": {
         "images": [],
         "video": {
-            "url": "https://www.youtube.com/embed/gB7gdq1NxO8",
-            "alt": "Description of the video"
+          "url": "https://www.youtube.com/embed/gB7gdq1NxO8",
+          "alt": "Description of the video"
         },
         "coverImage": {
-            "image": "/images/interferencies/interferencies_cover.jpg",
-            "alt": "Description of the cover image"
-        },
-        "status": "Completed/Ongoing",
-        "routeName": "interferencies"
+          "image": "/images/interferencies/interferencies_cover.jpg",
+          "alt": "Description of the cover image"
+        }
+      },
+      "status": "Ongoing",
+      "routeName": "interferencies"
     }
   ]
 }

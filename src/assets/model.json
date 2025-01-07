@@ -3,46 +3,46 @@
   ":description": "Model for portfolio projects structure",
   "projects": {
     ":items": {
-      "title": { ":type": "string" },
-      "year": { ":type": "number" },
-      "client": { ":type": "string" },
-      "type": { ":type": "string" },
-      "location": { ":type": "string" },
+      "title": { ":type": "line" },
+      "year": { ":type": "line" },
+      "client": { ":type": "line" },
+      "type": { ":type": "line" },
+      "location": { ":type": "line" },
       "authors": {
-        ":items": { ":type": "string" }
+        ":items": { ":type": "line" }
       },
       "showcases": {
-        ":items": { ":type": "string" }
+        ":items": { ":type": "line" }
       },
       "nextShowcases": {
-        ":items": { ":type": "string" }
+        ":items": { ":type": "line" }
       },
       "technologies": {
-        ":items": { ":type": "string" }
+        ":items": { ":type": "line" }
       },
       "description": {
         "mainText": { ":type": "text" },
         "technicalDetails": { ":type": "text" },
         "credits": {
-          ":items": { ":type": "string" }
+          ":items": { ":type": "line" }
         }
       },
       "images": {
         ":items": {
           "image": { ":type": "image" },
-          "alt": { ":type": "string" }
+          "alt": { ":type": "line" }
         }
       },
       "video": {
-        "url": { ":type": "string" },
-        "alt": { ":type": "string" }
+        "url": { ":type": "line" },
+        "alt": { ":type": "line" }
       },
       "coverImage": {
         "image": { ":type": "image" },
-        "alt": { ":type": "string" }
+        "alt": { ":type": "line" }
       },
-      "status": { ":type": "string" },
-      "routeName": { ":type": "string" }
+      "status": { ":type": "line" },
+      "routeName": { ":type": "line" }
     }
   }
 }

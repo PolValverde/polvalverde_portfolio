@@ -10,37 +10,8 @@
         "showcases": ["Festival Lluèrnia 2024 (Olot)"],
         "nextShowcases": null,
         "technologies": ["Electronics", "Max/MSP", "Analogic Sound Design"],
-        "description": [
-            "Interferències is an immersive installation that transforms the invisible electromagnetic waves around us into a perceptible sound and light landscape. The beacons capture signals from sources like antennas, radios, or mobile devices, converting them into sound and light in real-time. Each visit is unique due to the constant interaction with the environment and visitors' devices, which can alter the landscape by generating interferences. This piece invites exploration of the invisible electromagnetic dimensions that underpin our world.",
-            "The signal-capturing device is based on the open-source project <em>Priezor</em>, created by LOM / Jonás Gruska, and licensed under CC BY-NC-SA. More information at <a href=https://store.lom.audio/products/priezor target=_blank style=text-decoration:underline>LOM Audio</a>.",
-            "Run time: Continuous",
-            "In collaboration with: Lluèrnia, Festival de Llum i Foc",
-            "Commissioned by: Self-commissioned &amp; Lluèrnia",
-            "Images by: Daniel Verano",
-            "Acknowledgments: Jonás Gruska (<em>Priezor</em>)"
-        ],
-        "images": [
-            {
-                "url": "/images/interferencies/Interferencies_00065.jpg",
-                "alt": "Description of picture 1"
-            },
-            {
-                "url": "/images/interferencies/Interferencies_00111-3.jpg",
-                "alt": "Description of picture 2"
-            },
-            {
-                "url": "/images/interferencies/Interferencies_00284.jpg",
-                "alt": "Description of picture 3"
-            },
-            {
-                "url": "/images/interferencies/Interferencies_00296-2.jpg",
-                "alt": "Description of picture 4"
-            },
-            {
-                "url": "/images/interferencies/Interferencies_00405-2.jpg",
-                "alt": "Description of picture 5"
-            }
-        ],
+        "description": [],
+        "images": [],
         "video": {
             "url": "https://www.youtube.com/embed/gB7gdq1NxO8",
             "alt": "Description of the video"

@@ -19,11 +19,15 @@
         ":items": { ":type": "line" }
       },
       "description": {
-        ":items": { ":type": "text" }
+        "mainText": { ":type": "text" },
+        "technicalDetails": { ":type": "text" },
+        "credits": {
+          ":items": { ":type": "line" }
+        }
       },
       "images": {
         ":items": {
-          "url": { ":type": "line" },
+          "image": { ":type": "image" },
           "alt": { ":type": "line" }
         }
       },
@@ -32,7 +36,7 @@
         "alt": { ":type": "line" }
       },
       "coverImage": {
-        "url": { ":type": "line" },
+        "image": { ":type": "image" },
         "alt": { ":type": "line" }
       },
       "status": { ":type": "line" },

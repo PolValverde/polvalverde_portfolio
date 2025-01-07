@@ -41,8 +41,14 @@
           "alt": "Description of the video"
         },
         "coverImage": {
-          "image": "/images/interferencies/interferencies_cover.jpg",
-          "alt": "Description of the cover image"
+          "image": {
+            "provider": "uploadcare",
+            "type": "image",
+            "id": "52167227-2163-4fca-b8d8-d0ceaf3f3693",
+            "height": 1365,
+            "width": 2048
+          },
+          "alt": "Interferències - 2024"
         }
       },
       "status": "Ongoing",

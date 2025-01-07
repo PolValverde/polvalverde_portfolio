@@ -1,7 +1,7 @@
 <template>
     <div class="project-grid-element flex flex-col items-center appear-animation cursor-pointer" @click="handleClick">
         <div class="image-wrapper relative w-full pt-[62.5%]">
-            <img :src="imageSrc.url" :alt="imageSrc.alt" class="project-image absolute top-0 left-0 w-full h-full object-cover" />
+            <img :src="imageSrc" :alt="projectName" class="project-image absolute top-0 left-0 w-full h-full object-cover" />
             <div class="overlay absolute top-0 left-0 w-full h-full bg-black opacity-0"></div>
             <div class="project-info absolute bottom-0 left-0 text-left text-white w-full py-3 px-4 z-10">
                 <div class="font-semibold w-full leading-tight">{{ projectName }}</div>
@@ -16,7 +16,7 @@ export default {
     name: 'ProjectGridElement',
     props: {
         imageSrc: {
-            type: Object,
+            type: String,
             required: true
         },
         projectName: {

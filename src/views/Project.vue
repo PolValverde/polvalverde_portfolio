@@ -11,7 +11,9 @@
                     <div class="grid grid-cols-2">
                         <strong>Authors</strong>
                         <ul>
-                            <li v-for="(author, index) in projectInfo?.authors" :key="index">{{ author }}</li>
+                            <li v-for="(credit, index) in projectInfo?.credits" :key="index">
+                                {{ credit.name }}
+                            </li>
                         </ul>
                     </div>
                     <div class="grid grid-cols-2">
@@ -32,45 +34,51 @@
                     </div>
                     <div class="grid grid-cols-2">
                         <strong>Technologies</strong>
-                        <div>{{ projectInfo?.technologies.join(', ') }}</div>
+                        <div>
+                            {{ projectInfo?.technologies.map(tech => tech.name).join(', ') }}
+                        </div>
                     </div>
                 </div>
                 <div class="description mt-4 text-sm appear-animation delay-2">
-                    <div v-for="(paragraph, index) in projectInfo?.description" :key="index" v-html="paragraph" class="mb-2"/>
+                    <div v-html="projectInfo?.description.mainText" class="mb-2"/>
+                    <div v-html="projectInfo?.description.technicalDetails" class="mb-2"/>
                 </div>
             </div>
             <div class="image-column overflow-y-auto h-screen pb-24">
-                <div v-if="projectInfo?.video" 
+                <div v-if="projectInfo?.media.video" 
                      class="video-cover mb-4 appear-animation delay-3"
-                     @click="openModal({ video: projectInfo.video })">
-                    <img :src="projectInfo.coverImage.url" alt="Video Cover">
+                     @click="openModal({ video: projectInfo.media.video })">
+                    <img :src="projectInfo.media.coverImage.imageUrl" :alt="projectInfo.media.coverImage.alt">
                     <div class="play-symbol">▶</div>
                 </div>
-                <div v-for="(image, index) in projectInfo?.images" 
+                <div v-for="(image, index) in projectInfo?.media.images" 
                      :key="index" 
                      :class="`image-item mb-4 appear-animation delay-${index + 4}`">
-                    <img :src="image.url" :alt="image.alt || 'Project Image'" @click="openModal(image, index)">
+                    <img :src="image.imageUrl" :alt="image.alt" @click="openModal(image, index)">
                 </div>
             </div>
         </div>
         <div v-if="isModalOpen" class="modal z-30" @click="closeModal">
             <div class="modal-content" @click.stop>
-                <img v-if="selectedImage && !selectedImage.video" :src="selectedImage.url" :alt="selectedImage.alt || 'Project Image'">
+                <img v-if="selectedImage && !selectedImage.video" :src="selectedImage.imageUrl" :alt="selectedImage.alt || 'Project Image'">
                 <iframe v-if="selectedImage && selectedImage.video" id="player" type="text/html" width="640" height="360"
-                    :src="`${selectedImage.video.url}?enablejsapi=1&origin=www.polvalverde.com`" frameborder="0" allowfullscreen>
+                    :src="selectedImage.video.url" frameborder="0" allowfullscreen>
                 </iframe>
                 <p v-if="selectedImage && selectedImage.alt && !selectedImage.video" class="caption">{{ projectInfo?.title }} - {{ projectInfo?.location }}, {{ projectInfo?.year }}</p>
-                <p v-if="!selectedImage.video" class="counter">{{ selectedIndex + 1 }}/{{ projectInfo?.images.length }}</p>
+                <p v-if="selectedImage && !selectedImage.video && projectInfo?.media.images" class="counter">{{ selectedIndex + 1 }}/{{ projectInfo.media.images.length }}</p>
             </div>
             <span class="close" @click="closeModal">&times;</span>
-            <div v-if="selectedIndex > 0" class="arrow left-arrow" @click.stop="prevImage">❮</div>
-            <div v-if="selectedIndex < projectInfo?.images.length - 1" class="arrow right-arrow" @click.stop="nextImage">❯</div>
+            <template v-if="selectedImage && !selectedImage.video && projectInfo?.media.images">
+                <div v-if="selectedIndex > 0" class="arrow left-arrow" @click.stop="prevImage">❮</div>
+                <div v-if="selectedIndex < projectInfo.media.images.length - 1" class="arrow right-arrow" @click.stop="nextImage">❯</div>
+            </template>
         </div>
     </div>
 </template>
 
 <script>
-import projects from '@/assets/projects.json';
+import contentJson from '@/assets/content.json';
+import { getUploadcareUrl } from '@/utils/image';
 
 export default {
     name: 'Project',
@@ -86,9 +94,24 @@ export default {
     methods: {
         async fetchProject() {
             const routeName = this.$route.params.routeName;
-            console.log('Route Name:', routeName); // Debugging line
-            this.projectInfo = projects.find(project => project.routeName === routeName);
-            console.log('Project Info:', this.projectInfo); // Debugging line
+            const project = contentJson.projects.find(project => project.routeName === routeName);
+            if (project) {
+                // Process images with Uploadcare URLs
+                this.projectInfo = {
+                    ...project,
+                    media: {
+                        ...project.media,
+                        images: project.media.images.map(img => ({
+                            ...img,
+                            imageUrl: getUploadcareUrl(img.image),
+                        })),
+                        coverImage: {
+                            ...project.media.coverImage,
+                            imageUrl: getUploadcareUrl(project.media.coverImage.image)
+                        }
+                    }
+                };
+            }
         },
         openModal(item, index) {
             this.selectedImage = item;
@@ -103,15 +126,16 @@ export default {
             document.removeEventListener('keydown', this.handleKeydown);
         },
         prevImage() {
-            if (this.selectedIndex > 0) {
+            if (this.selectedIndex > 0 && this.projectInfo?.media.images) {
                 this.selectedIndex--;
-                this.selectedImage = this.projectInfo.images[this.selectedIndex];
+                this.selectedImage = this.projectInfo.media.images[this.selectedIndex];
             }
         },
         nextImage() {
-            if (this.selectedIndex < this.projectInfo.images.length - 1) {
+            if (this.projectInfo?.media.images && 
+                this.selectedIndex < this.projectInfo.media.images.length - 1) {
                 this.selectedIndex++;
-                this.selectedImage = this.projectInfo.images[this.selectedIndex];
+                this.selectedImage = this.projectInfo.media.images[this.selectedIndex];
             }
         },
         handleKeydown(event) {

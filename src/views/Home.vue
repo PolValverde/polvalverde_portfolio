@@ -11,7 +11,7 @@
             :key="project.id"
             :class="{'appear-animation': true, 'exit-animation': isExiting}"
             :style="getDelayStyle(index + 1, isExiting)"
-            :imageSrc="project.coverImage"
+            :imageSrc="project.media.coverImage.imageUrl"
             :projectName="project.title"
             :projectYear="project.year"
             :projectPlace="project.location"
@@ -29,7 +29,7 @@
             :key="project.id"
             :class="{'appear-animation': true, 'exit-animation': isExiting}"
             :style="getDelayStyle(index + featuredProjects.length + 2, isExiting)"
-            :imageSrc="project.coverImage"
+            :imageSrc="project.media.coverImage.imageUrl"
             :projectName="project.title"
             :projectYear="project.year"
             :projectPlace="project.location"
@@ -42,8 +42,9 @@
 </template>
 
 <script>
-import projects from '@/assets/projects.json';
+import contentJson from '@/assets/content.json';
 import ProjectGridElement from '@/components/ProjectGridElement.vue';
+import { getUploadcareUrl } from '@/utils/image';
 
 export default {
   components: {
@@ -51,17 +52,39 @@ export default {
   },
   data() {
     return {
-      projects,
+      projects: contentJson.projects,
       isAnimating: true,
       isExiting: false
     };
   },
   computed: {
     featuredProjects() {
-      return this.projects.filter(p => p.type === 'on_going');
+      return this.projects
+        .filter(p => p.type === 'on_going')
+        .map(p => ({
+          ...p,
+          media: {
+            ...p.media,
+            coverImage: {
+              ...p.media.coverImage,
+              imageUrl: getUploadcareUrl(p.media.coverImage.image, '-/preview/600x400/')
+            }
+          }
+        }));
     },
     worksProjects() {
-      return this.projects.filter(p => p.type === 'featured');
+      return this.projects
+        .filter(p => p.type === 'featured')
+        .map(p => ({
+          ...p,
+          media: {
+            ...p.media,
+            coverImage: {
+              ...p.media.coverImage,
+              imageUrl: getUploadcareUrl(p.media.coverImage.image, '-/preview/600x400/')
+            }
+          }
+        }));
     }
   },
   methods: {
@@ -104,6 +127,7 @@ export default {
   }
   100% {
     opacity: 1;
+  height: 100%;
     filter: blur(0);
   }
 }

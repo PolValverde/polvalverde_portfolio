@@ -9,22 +9,22 @@
       "type": { ":type": "line" },
       "location": { ":type": "line" },
       "authors": {
-        ":items": { ":type": "line" }
+        ":items": { ":type": "text" }
       },
       "showcases": {
-        ":items": { ":type": "line" }
+        ":items": { ":type": "text" }
       },
       "nextShowcases": {
-        ":items": { ":type": "line" }
+        ":items": { ":type": "text" }
       },
       "technologies": {
-        ":items": { ":type": "line" }
+        ":items": { ":type": "text" }
       },
       "description": {
         "mainText": { ":type": "text" },
         "technicalDetails": { ":type": "text" },
         "credits": {
-          ":items": { ":type": "line" }
+          ":items": { ":type": "text" }
         }
       },
       "images": {

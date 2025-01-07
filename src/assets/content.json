@@ -7,20 +7,25 @@
       "type": "on_going",
       "location": "Olot",
       "technologies": [
-        "Electronics",
-        "Max/MSP",
-        "Analogic Sound Design"
+        { "name": "Electronics" },
+        { "name": "Max/MSP" },
+        { "name": "Analogic Sound Design" }
       ],
       "description": {
         "mainText": "Project description goes here",
         "technicalDetails": "Technical details go here"
       },
       "credits": [
-        "Daniel Verano",
-        "Pol Valverde i Valverde"
+        { "name": "Daniel Verano" },
+        { "name": "Pol Valverde i Valverde" }
       ],
       "media": {
-        "images": [],
+        "images": [
+          {
+            "image": "/path/to/image.jpg",
+            "alt": "Image description"
+          }
+        ],
         "video": {
           "url": "https://www.youtube.com/embed/gB7gdq1NxO8",
           "alt": "Description of the video"

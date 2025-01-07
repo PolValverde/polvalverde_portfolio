@@ -34,13 +34,13 @@
       "credits": {
         ":description": "Project credits and acknowledgments",
         ":items": {
-          ":type": "line"
+          "name": { ":type": "line" }
         }
       },
       "technologies": {
         ":description": "Technologies used in the project",
         ":items": {
-          ":type": "line"
+          "name": { ":type": "line" }
         }
       },
       "media": {

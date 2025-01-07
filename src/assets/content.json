@@ -32,7 +32,49 @@
       "media": {
         "images": [
           {
-            "image": "/path/to/image.jpg",
+            "image": {
+              "provider": "uploadcare",
+              "type": "image",
+              "id": "2ace92e0-7c9a-45bb-a14a-c3e171d1b4e2",
+              "height": 2048,
+              "width": 1365
+            }
+          },
+          {
+            "image": {
+              "provider": "uploadcare",
+              "type": "image",
+              "id": "b74d731e-67a1-473b-88e2-c108e3bc8394",
+              "height": 1365,
+              "width": 2048
+            }
+          },
+          {
+            "image": {
+              "provider": "uploadcare",
+              "type": "image",
+              "id": "a86b9265-73af-44f3-ba6b-e18bab329148",
+              "height": 1365,
+              "width": 2048
+            }
+          },
+          {
+            "image": {
+              "provider": "uploadcare",
+              "type": "image",
+              "id": "27cc1d16-1f5c-4de4-9427-fd203dd64791",
+              "height": 2048,
+              "width": 1365
+            }
+          },
+          {
+            "image": {
+              "provider": "uploadcare",
+              "type": "image",
+              "id": "b9f994db-e8a6-4dcd-8bd9-019ce5e251d0",
+              "height": 1365,
+              "width": 2048
+            },
             "alt": "Image description"
           }
         ],

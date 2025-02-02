@@ -76,6 +76,10 @@
         ":type": "line",
         ":description": "Project status"
       },
+      "location": {
+        ":type": "line",
+        ":description": "Project location"
+      },
       "routeName": {
         ":type": "line",
         ":description": "URL route name"

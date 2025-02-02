@@ -60,7 +60,7 @@ export default {
   computed: {
     featuredProjects() {
       return this.projects
-        .filter(p => p.type === 'on_going')
+        .filter(p => p.type === 'featured')
         .map(p => ({
           ...p,
           media: {
@@ -74,7 +74,7 @@ export default {
     },
     worksProjects() {
       return this.projects
-        .filter(p => p.type === 'featured')
+        .filter(p => p.type === 'works')
         .map(p => ({
           ...p,
           media: {

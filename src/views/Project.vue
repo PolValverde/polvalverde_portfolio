@@ -19,7 +19,7 @@
                     <div class="grid grid-cols-2">
                         <strong>Contribution</strong>
                         <div>
-                            {{ projectInfo?.roles.join(', ') }}
+                            {{ projectInfo?.roles.map(role => role.name).join(', ') }}
                         </div>
                     </div>
                     <div class="grid grid-cols-2">

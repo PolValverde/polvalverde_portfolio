@@ -75,7 +75,7 @@
       "roles": {
         ":description": "Individual contributions and responsibilities in the project",
         ":items": {
-          ":type": "line"
+          "role": { ":type": "line" }
         }
       },
       "status": {

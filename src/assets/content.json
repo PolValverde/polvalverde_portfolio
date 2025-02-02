@@ -33,8 +33,12 @@
       "routeName": "el_bosc",
       "location": "Barcelona",
       "roles": [
-        "Electronics design and implementation",
-        "Technical development"
+        {
+          "name": "Electronics design and implementation"
+        },
+        {
+          "name": "Technical development"
+        }
       ],
       "authors": [
         {
@@ -138,8 +142,12 @@
       "status": "Ongoing",
       "routeName": "interferencies",
       "roles": [
-        "Analog sound design and implementation",
-        "Max/MSP programming and system architecture"
+        {
+          "role": "Analog sound design and implementation"
+        },
+        {
+          "role": "Max/MSP programming and system architecture"
+        }
       ]
     }
   ]

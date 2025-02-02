@@ -1,6 +1,38 @@
 {
   "projects": [
     {
+      "title": "El Bosc (The Forest)",
+      "year": "2022",
+      "client": "PCCB / Hospital Sant Joan de Déu",
+      "type": "works",
+      "technologies": [
+        {
+          "name": "Electronics"
+        },
+        {
+          "name": "Custom HCI"
+        },
+        {
+          "name": "Video Mapping"
+        },
+        {
+          "name": "Max/MSP"
+        }
+      ],
+      "media": {
+        "coverImage": {
+          "image": {
+            "provider": "uploadcare",
+            "type": "image",
+            "id": "2d708c8e-9ad4-401c-b7fc-e573f1b0e806",
+            "height": 1320,
+            "width": 1840
+          }
+        }
+      },
+      "routeName": "el_bosc"
+    },
+    {
       "title": "Interferències",
       "year": "2024",
       "client": "Self-comissioned",

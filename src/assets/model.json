@@ -31,8 +31,8 @@
           ":richtext": true
         }
       },
-      "credits": {
-        ":description": "Project credits and acknowledgments",
+      "authors": {
+        ":description": "Project authors and acknowledgments",
         ":items": {
           "name": { ":type": "line" }
         }
@@ -70,6 +70,12 @@
           "alt": {
             ":type": "line"
           }
+        }
+      },
+      "roles": {
+        ":description": "Individual contributions and responsibilities in the project",
+        ":items": {
+          ":type": "line"
         }
       },
       "status": {

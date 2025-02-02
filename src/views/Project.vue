@@ -11,10 +11,16 @@
                     <div class="grid grid-cols-2">
                         <strong>Authors</strong>
                         <ul>
-                            <li v-for="(credit, index) in projectInfo?.credits" :key="index">
-                                {{ credit.name }}
+                            <li v-for="(author, index) in projectInfo?.authors" :key="index">
+                                {{ author.name }}
                             </li>
                         </ul>
+                    </div>
+                    <div class="grid grid-cols-2">
+                        <strong>Contribution</strong>
+                        <div>
+                            {{ projectInfo?.roles.join(', ') }}
+                        </div>
                     </div>
                     <div class="grid grid-cols-2">
                         <strong>Comissioned by</strong>

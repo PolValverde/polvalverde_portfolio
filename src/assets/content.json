@@ -31,7 +31,16 @@
         }
       },
       "routeName": "el_bosc",
-      "location": "Barcelona"
+      "location": "Barcelona",
+      "roles": [
+        "Electronics design and implementation",
+        "Technical development"
+      ],
+      "authors": [
+        {
+          "name": "Pol Valverde i Valverde"
+        }
+      ]
     },
     {
       "title": "Interferències",
@@ -54,7 +63,7 @@
         "mainText": "<p>Que pasa! <strong>Que passa? </strong><s>HAAAAAAA</s></p>",
         "technicalDetails": "Technical details go here"
       },
-      "credits": [
+      "authors": [
         {
           "name": "Daniel Verano"
         },
@@ -127,7 +136,11 @@
         }
       },
       "status": "Ongoing",
-      "routeName": "interferencies"
+      "routeName": "interferencies",
+      "roles": [
+        "Analog sound design and implementation",
+        "Max/MSP programming and system architecture"
+      ]
     }
   ]
 }
